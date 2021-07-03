@@ -24,12 +24,12 @@ function Header() {
         />
         <div className="header___input">
           <SearchIcon />
-          <input type="text" />
+          <input placeholder="Search Facebook" type="text" />
         </div>
       </div>
 
-      <div className="header___middle">
-        <div className="header___option">
+      <div className="header___center">
+        <div className="header___option header___option--active">
           <HomeIcon fontSize="large" />
         </div>
         <div className="header___option">

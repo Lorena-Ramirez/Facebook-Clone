@@ -41,5 +41,20 @@
 }
 
 .messageSender___option {
-  
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.messageSender___option > h3 {
+  font-size: medium;
+  margin-left: 10px;
+}
+
+.messageSender___option:hover {
+  background-color: #eff2f5;
+  border-radius: 20px;
 }

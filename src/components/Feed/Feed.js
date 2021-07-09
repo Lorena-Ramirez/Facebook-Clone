@@ -9,9 +9,27 @@ function Feed() {
     <div className="feed">
       <StoryReel />
       <MessageSender />
-      <Post />
-   
-
+      <Post 
+      profilePic="https://www.earnthenecklace.com/wp-content/uploads/2019/12/Catherine-Paiz-Wiki-Real-Name-Age-Family-ACE-Family-Austin-McBroom-Fiance-and-Facts-To-Know.jpg"
+      message="Hello beautiful developers!"
+      timestamp="7/9/21"
+      username="Adelina Rose"
+      image="https://media.distractify.com/brand-img/43VbHx0M8/0x0/ace-family-famous-1571175043742.png"
+      />
+       <Post 
+      profilePic="https://www.earnthenecklace.com/wp-content/uploads/2019/12/Catherine-Paiz-Wiki-Real-Name-Age-Family-ACE-Family-Austin-McBroom-Fiance-and-Facts-To-Know.jpg"
+      message="Hello beautiful developers!"
+      timestamp="7/9/21"
+      username="Adelina Rose"
+      />
+      {/* <Post 
+      profilePic={}
+      message={}
+      timestamp={}
+      username={}
+      image={}
+      /> */}
+      
     </div>
   )
 }

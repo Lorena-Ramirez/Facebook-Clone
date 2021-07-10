@@ -4,6 +4,7 @@ import Header from "./components/Header/Header.js";
 import Sidebar from './components/Sidebar/Sidebar.js';
 import Feed from './components/Feed/Feed.js';
 import Widgets from './components/Widgets/Widgets';
+import Login from './components/Login/Login';
 
 function App() {
   const user = "Lorena";
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="app">
       {!user ? (
-        <h1>Login</h1>
+        <Login />
       ) : (
         <>
           <Header />

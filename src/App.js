@@ -6,15 +6,23 @@ import Feed from './components/Feed/Feed.js';
 import Widgets from './components/Widgets/Widgets';
 
 function App() {
+  const user = "Lorena";
+
   return (
     <div className="app">
-      <Header />
+      {!user ? (
+        <h1>Login</h1>
+      ) : (
+        <>
+          <Header />
 
-      <div className="app___body">
-        <Sidebar />
-        <Feed />
-        <Widgets />
-      </div>
+          <div className="app___body">
+            <Sidebar />
+            <Feed />
+            <Widgets />
+          </div>
+        </>
+      )}
     </div>
   );
 }

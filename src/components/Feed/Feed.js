@@ -9,15 +9,26 @@ function Feed() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    db.collection("posts").onSnapshot(snapshot => (
-      setPosts(snapshot.docs.map(doc => { id: doc.id, data: doc.data() }))
-    ))
+    db.collection("posts").onSnapshot((snapshot) =>
+      setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
+      )
   }, []);
   return (
     <div className="feed">
       <StoryReel />
       <MessageSender />
-      <Post 
+
+      {posts.map((post) => (
+        <Post 
+        key={post.data.id}
+        profilePic={post.data.profilePic}
+        message={post.data.message}
+        timestamp={post.data.timestamp}
+        username={post.data.username}
+        image={post.data.image}
+        />
+      ))}
+      {/* <Post 
       profilePic="https://www.earnthenecklace.com/wp-content/uploads/2019/12/Catherine-Paiz-Wiki-Real-Name-Age-Family-ACE-Family-Austin-McBroom-Fiance-and-Facts-To-Know.jpg"
       message="Hello beautiful developers!"
       timestamp="7/9/21"
@@ -29,7 +40,7 @@ function Feed() {
       message="Hello beautiful developers!"
       timestamp="7/9/21"
       username="Adelina Rose"
-      />
+      /> */}
       {/* <Post 
       profilePic={}
       message={}

@@ -12,7 +12,7 @@ import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 
 function Sidebar() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   return (
     <div className ="sidebar">
       <SidebarRow 

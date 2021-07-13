@@ -12,7 +12,7 @@ import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 function MessageSender() {
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   const handleSubmit = (e) => {
      e.preventDefault();

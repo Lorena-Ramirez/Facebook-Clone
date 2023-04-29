@@ -5,7 +5,7 @@ import "./StoryReel.css";
 
 function StoryReel() {
   return (
-      <div className="storyReel">
+    <div className="storyReel">
       <Story
         image="https://www.michigan.org/sites/default/files/styles/15_6_desktop/public/DM.ss_.18_Isle%20Royale%20National%20Park_Hiking%2009_Drew.Mason_.jpg?itok=sTeKHKxa&timestamp=1614630122"
         profileSrc="https://avatars3.githubusercontent.com/u/30196405?s=460&u=6bd3c8280b827a0ea3f661fc7c0c65117b19bc61&v=4"
@@ -22,7 +22,7 @@ function StoryReel() {
         title="Peyton Williams"
       />
       <Story
-        image="https://stories.cheapcaribbean.com/wp-content/uploads/2018/10/Laying-by-the-pool-Marriott-Puerto-Vallarta-@la_agorera.jpg"
+        image="https://doggierescue.com/wp-content/uploads/2021/02/Walking5-scaled.jpg"
         profileSrc="https://i.pinimg.com/236x/c6/c2/23/c6c223539305e0f418f94a2fa28fc451.jpg"
         title="Elena Ramirez"
       />
